@@ -11,14 +11,14 @@
       <h1 class="site-title">Bake Bakery</h1>
     </div>
     <h2 class="subtitle">RECIPES</h2>
-    <div class="filter">
-      <p>All</p>
-      <p>Dairy</p>
-      <p>Fast-bake</p>
-      <p>Gluten-free</p>
-    </div>
+    <input type="checkbox" id="toggle-dairy" hidden />
+    <label for="toggle-dairy">Dairy-Free</label>
+    <input type="checkbox" id="toggle-gluten" hidden />
+    <label for="toggle-gluten">Gluten-Free</label>
+    <input type="checkbox" id="toggle-fast" hidden />
+    <label for="toggle-fast">Fast Bake</label>
     <div class="flex-container">
-      <div class="container">
+      <div class="container has-dairy has-gluten not-fast">
         <div class="card">
           <div class="front blueberry"></div>
           <div class="back">
@@ -34,7 +34,7 @@
         </div>
         <h3>Classic Blueberry Buckle</h3>
       </div>
-      <div class="container">
+      <div class="container has-dairy has-gluten">
         <div class="card">
           <div class="front potato"></div>
           <div class="back">
@@ -49,7 +49,7 @@
         </div>
         <h3>Award Winning Potato Cake</h3>
       </div>
-      <div class="container">
+      <div class="container has-dairy not-fast">
         <div class="card">
           <div class="front flan"></div>
           <div class="back">
@@ -65,7 +65,7 @@
         </div>
         <h3>Spanish Flan</h3>
       </div>
-      <div class="container">
+      <div class="container has-dairy has-gluten">
         <div class="card">
           <div class="front bread"></div>
           <div class="back">

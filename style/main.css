@@ -23,28 +23,6 @@ h3 {
   font-size: 24px;
 }
 
-.filter {
-  display: flex;
-  flex-direction: row;
-  gap: 20px;
-  font-weight: bold;
-  border-radius: 4rem;
-  margin-bottom: 20px;
-  color: #2a2a2ac0;
-  padding: 1rem 3rem;
-  text-transform: uppercase;
-  background-color: #fff;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
-    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
-}
-
-.filter > p:hover {
-  color: pink;
-  transition: color 250ms;
-  cursor: pointer;
-}
-
 .subtitle {
   margin-bottom: 20px;
   font-size: 32px;
@@ -58,17 +36,17 @@ h3 {
 }
 
 .title {
-  padding: 50px;
+  padding: 20px;
   max-width: 1200px;
   top: 0;
   text-align: center;
   width: 100%;
   border-bottom: 2px solid #2a2b2a;
-  margin: 20px 0;
+  margin: 10px 0;
   font-family: "Courgette", cursive;
   font-weight: 400;
   font-style: normal;
-  font-size: 40px;
+  font-size: 30px;
 }
 
 .title h1 {
@@ -124,6 +102,47 @@ h3 {
 
 .bread {
   background-image: url("/image/wildricebreadwithsunflowerseeds.png");
+}
+
+.has-dairy,
+.has-gluten,
+.not-fast {
+  display: block;
+}
+
+label[for="toggle-dairy"],
+label[for="toggle-gluten"],
+label[for="toggle-fast"] {
+  position: relative;
+  display: block;
+  font-weight: bold;
+  border-radius: 4rem;
+  margin-bottom: 20px;
+  color: #2a2a2ac0;
+  padding: 1rem 3rem;
+  text-transform: uppercase;
+  background-color: #fff;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+label:hover {
+  background-color: pink;
+  transition: background-color 250ms;
+  cursor: pointer;
+}
+
+#toggle-dairy:checked ~ .flex-container .has-dairy {
+  display: none;
+}
+
+#toggle-gluten:checked ~ .flex-container .has-gluten {
+  display: none;
+}
+
+#toggle-fast:checked ~ .flex-container .not-fast {
+  display: none;
 }
 
 .back {
