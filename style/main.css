@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  overflow: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #fffaaa;
+  color: #2a2a2a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h3 {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 24px;
+}
+
+.filter {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  font-weight: bold;
+  border-radius: 4rem;
+  margin-bottom: 20px;
+  color: #2a2a2ac0;
+  padding: 1rem 3rem;
+  text-transform: uppercase;
+  background-color: #fff;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+.filter > p:hover {
+  color: pink;
+  transition: color 250ms;
+  cursor: pointer;
+}
+
+.subtitle {
+  margin-bottom: 20px;
+  font-size: 32px;
+}
+
+.flex-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  padding: 50px;
+  max-width: 1200px;
+  top: 0;
+  text-align: center;
+  width: 100%;
+  border-bottom: 2px solid #2a2b2a;
+  margin: 20px 0;
+  font-family: "Courgette", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 40px;
+}
+
+.title h1 {
+  transform: rotate(-5deg);
+}
+
+.container {
+  width: 300px;
+  height: 450px;
+}
+
+.container:hover > .card {
+  cursor: pointer;
+  transform: rotateY(180deg);
+}
+
+.card {
+  color: rgb(211, 211, 211);
+  height: 100%;
+  width: 100%;
+  position: relative;
+  transition: transform 1500ms;
+  transform-style: preserve-3d;
+}
+
+.front,
+.back {
+  height: 100%;
+  width: 100%;
+  border-radius: 4px;
+  position: absolute;
+  backface-visibility: hidden;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.front {
+  background-size: cover;
+}
+
+.blueberry {
+  background-image: url("/image/classicblueberrybuckle.png");
+}
+
+.potato {
+  background-image: url("/image/potatocake.png");
+  background-position: center;
+}
+
+.flan {
+  background-image: url("/image/spanishflan.png");
+  background-position: center;
+}
+
+.bread {
+  background-image: url("/image/wildricebreadwithsunflowerseeds.png");
+}
+
+.back {
+  cursor: default;
+  background-color: #3a3a3a;
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+}
+
+.back a {
+  color: white;
+}
