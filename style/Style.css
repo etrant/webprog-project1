@@ -99,7 +99,9 @@ p{
   width: 25px;
   background-color: #eee;
 }
-
+.container:hover{
+  background-color: #a3a0a0;
+}
 .container:hover input ~ .checkmark {
   background-color: #ccc;
 }
