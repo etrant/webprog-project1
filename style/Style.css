@@ -1,81 +1,92 @@
-body{
-	background-color:#FDEBD0;
+body {
+  background-color: #f2f2f2;
 }
 
-h1{
-	text-align: center;
-	font-size:75px;
-	color:#EC7063;
+h1 {
+  font-size: 48px;
+  color: #ec7063;
 }
 
-.content{
-	width: 70%;
-	margin: 0 auto;
-	display:flex;
-	flex-direction: row;
+.content {
+  padding: 40px;
+  background-color: #fff;
 }
 
-.left{
-	width:40%;
-	text-align: left;
-	background-color:#FEF9E7;
+.summary {
+  color: black;
+  font-weight: normal;
+}
+.ing,
+.d-text {
+  font-weight: bold;
 }
 
-.right{
-	width:60%;
-	text-align: right;
+.content {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
 }
 
-.directions{
-	margin-top:25px;
+.left {
+  width: 40%;
+  text-align: left;
+  margin-right: 40px;
 }
 
-.nutrition{
-	margin-top:25px;
-	display: flex;
-    justify-content: right;
+.right {
+  position: relative;
+  width: 60%;
+  margin-top: 40px;
+  text-align: center;
+  color: black;
 }
 
-.pic{
-	height:500px;
-	width:700px;
+.directions {
+  margin-top: 25px;
 }
 
-p{
-	font-size:26px;
-	color:#F1C40F;
+.pic {
+  height: 650px;
+  width: 100%;
+}
+
+p {
+  font-size: 24px;
+  font-weight: bold;
 }
 
 .bar-graph {
-    width: 520px;
-    height: 500px;
-	margin: 20px;
-	margin-top:80px;
-	padding: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end; 
-	background-color:#FEF9E7;
-   }
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin-top: 20px;
+  padding: 10px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  background-color: #fef9e7;
+}
 
 .bar {
-    background-color: #EB984E;
-    width: 120px;
-    display: inline-block;
-    margin: 0 5px;
+  background-color: #eb984e;
+  width: 120px;
+  display: inline-block;
+  margin: 0 5px;
 }
 
 .bar-label {
-    display: block;
-    margin-bottom: 5px;
-    text-align: center;
+  display: block;
+  margin-bottom: 5px;
+  text-align: center;
 }
 
 .container {
+  margin-left: 20px;
   display: block;
   position: relative;
+  padding: 4px;
   padding-left: 35px;
-  margin-bottom: 12px;
   cursor: pointer;
   font-size: 22px;
   -webkit-user-select: none;
@@ -88,26 +99,26 @@ p{
   position: absolute;
   opacity: 0;
   cursor: pointer;
-
 }
 
 .checkmark {
   position: absolute;
-  top: 0;
+  top: 4;
   left: 0;
-  height: 25px;
+  margin-left: 4px;
   width: 25px;
+  aspect-ratio: 1/1;
   background-color: #eee;
 }
-.container:hover{
-  background-color: #a3a0a0;
+.container:hover {
+  background-color: #f07bff;
 }
 .container:hover input ~ .checkmark {
   background-color: #ccc;
 }
 
 .container input:checked ~ .checkmark {
-  background-color: #2196F3;
+  background-color: #2196f3;
 }
 
 .checkmark:after {
@@ -132,27 +143,32 @@ p{
   transform: rotate(45deg);
 }
 
-.dir{
-	font-size:24px;
+.dir {
+  font-size: 24px;
 }
 
-.ing{
-	font-size:24px;
+.ing {
+  font-size: 24px;
 }
 /* image Gallery */
-.flex-container{
-  margin: 10px;
+.gallery-item {
+  margin-top: 10px;
   display: flex;
   height: 150px;
-  width: 1000px;
+  width: 100%;
+  justify-content: space-between;
+  flex-direction: row;
   position: relative;
-  left:10%;
 }
 
 .gallery-item img {
   width: 165px;
   height: 75%;
-  margin: 5px;
   border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, .1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item img:hover {
+  height: 100%;
+  transition: 100ms;
 }
