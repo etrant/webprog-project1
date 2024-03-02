@@ -87,21 +87,21 @@ h3 {
 }
 
 .blueberry {
-  background-image: url("/image/classicblueberrybuckle.png");
+  background-image: url("../image/classicblueberrybuckle.png");
 }
 
 .potato {
-  background-image: url("/image/potatocake.png");
+  background-image: url("../image/potatocake.png");
   background-position: center;
 }
 
 .flan {
-  background-image: url("/image/spanishflan.png");
+  background-image: url("../image/spanishflan.png");
   background-position: center;
 }
 
 .bread {
-  background-image: url("/image/wildricebreadwithsunflowerseeds.png");
+  background-image: url("../image/wildricebreadwithsunflowerseeds.png");
 }
 
 .has-dairy,
